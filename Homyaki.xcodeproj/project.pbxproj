@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD3D219D1843C16500326C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D219C1843C16500326C3D /* Foundation.framework */; };
+		BD3D219F1843C16500326C3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D219E1843C16500326C3D /* CoreGraphics.framework */; };
+		BD3D21A11843C16500326C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D21A01843C16500326C3D /* UIKit.framework */; };
+		BD3D21A71843C16500326C3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21A51843C16500326C3D /* InfoPlist.strings */; };
+		BD3D21A91843C16500326C3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21A81843C16500326C3D /* main.m */; };
+		BD3D21AD1843C16500326C3D /* GAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21AC1843C16500326C3D /* GAAppDelegate.m */; };
+		BD3D21AF1843C16500326C3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21AE1843C16500326C3D /* Images.xcassets */; };
+		BD3D21B61843C16500326C3D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D21B51843C16500326C3D /* XCTest.framework */; };
+		BD3D21B71843C16500326C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D219C1843C16500326C3D /* Foundation.framework */; };
+		BD3D21B81843C16500326C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3D21A01843C16500326C3D /* UIKit.framework */; };
+		BD3D21C01843C16500326C3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21BE1843C16500326C3D /* InfoPlist.strings */; };
+		BD3D21C21843C16500326C3D /* HomyakiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21C11843C16500326C3D /* HomyakiTests.m */; };
+		BD3D21CE1843C1F300326C3D /* GAStartGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21CC1843C1F300326C3D /* GAStartGameController.m */; };
+		BD3D21CF1843C1F300326C3D /* GAStartGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21CD1843C1F300326C3D /* GAStartGameController.xib */; };
+		BD3D21D31843C21800326C3D /* grass_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21D01843C21800326C3D /* grass_bg@2x.png */; };
+		BD3D21D41843C21800326C3D /* grass_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21D11843C21800326C3D /* grass_bg.png */; };
+		BD3D21D51843C21800326C3D /* hamster.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21D21843C21800326C3D /* hamster.png */; };
+		BD3D21D71843C33300326C3D /* big_hamster.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21D61843C33300326C3D /* big_hamster.png */; };
+		BD3D21DB1843C41D00326C3D /* GAGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21D91843C41D00326C3D /* GAGameController.m */; };
+		BD3D21DC1843C41D00326C3D /* GAGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21DA1843C41D00326C3D /* GAGameController.xib */; };
+		BD3D21DE1843D61A00326C3D /* hole.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21DD1843D61A00326C3D /* hole.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD3D21B91843C16500326C3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3D21911843C16500326C3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3D21981843C16500326C3D;
+			remoteInfo = Homyaki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD3D21991843C16500326C3D /* Homyaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homyaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3D219C1843C16500326C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD3D219E1843C16500326C3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD3D21A01843C16500326C3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD3D21A41843C16500326C3D /* Homyaki-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homyaki-Info.plist"; sourceTree = "<group>"; };
+		BD3D21A61843C16500326C3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD3D21A81843C16500326C3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD3D21AA1843C16500326C3D /* Homyaki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homyaki-Prefix.pch"; sourceTree = "<group>"; };
+		BD3D21AB1843C16500326C3D /* GAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAAppDelegate.h; sourceTree = "<group>"; };
+		BD3D21AC1843C16500326C3D /* GAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAAppDelegate.m; sourceTree = "<group>"; };
+		BD3D21AE1843C16500326C3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD3D21B41843C16500326C3D /* HomyakiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomyakiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3D21B51843C16500326C3D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BD3D21BD1843C16500326C3D /* HomyakiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomyakiTests-Info.plist"; sourceTree = "<group>"; };
+		BD3D21BF1843C16500326C3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD3D21C11843C16500326C3D /* HomyakiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomyakiTests.m; sourceTree = "<group>"; };
+		BD3D21CB1843C1F300326C3D /* GAStartGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAStartGameController.h; sourceTree = "<group>"; };
+		BD3D21CC1843C1F300326C3D /* GAStartGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAStartGameController.m; sourceTree = "<group>"; };
+		BD3D21CD1843C1F300326C3D /* GAStartGameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAStartGameController.xib; sourceTree = "<group>"; };
+		BD3D21D01843C21800326C3D /* grass_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grass_bg@2x.png"; sourceTree = "<group>"; };
+		BD3D21D11843C21800326C3D /* grass_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_bg.png; sourceTree = "<group>"; };
+		BD3D21D21843C21800326C3D /* hamster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamster.png; sourceTree = "<group>"; };
+		BD3D21D61843C33300326C3D /* big_hamster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_hamster.png; sourceTree = "<group>"; };
+		BD3D21D81843C41D00326C3D /* GAGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGameController.h; sourceTree = "<group>"; };
+		BD3D21D91843C41D00326C3D /* GAGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAGameController.m; sourceTree = "<group>"; };
+		BD3D21DA1843C41D00326C3D /* GAGameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAGameController.xib; sourceTree = "<group>"; };
+		BD3D21DD1843D61A00326C3D /* hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hole.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD3D21961843C16500326C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D219F1843C16500326C3D /* CoreGraphics.framework in Frameworks */,
+				BD3D21A11843C16500326C3D /* UIKit.framework in Frameworks */,
+				BD3D219D1843C16500326C3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3D21B11843C16500326C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D21B61843C16500326C3D /* XCTest.framework in Frameworks */,
+				BD3D21B81843C16500326C3D /* UIKit.framework in Frameworks */,
+				BD3D21B71843C16500326C3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3D21901843C16500326C3D = {
+			isa = PBXGroup;
+			children = (
+				BD3D21A21843C16500326C3D /* Homyaki */,
+				BD3D21BB1843C16500326C3D /* HomyakiTests */,
+				BD3D219B1843C16500326C3D /* Frameworks */,
+				BD3D219A1843C16500326C3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3D219A1843C16500326C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D21991843C16500326C3D /* Homyaki.app */,
+				BD3D21B41843C16500326C3D /* HomyakiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD3D219B1843C16500326C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D219C1843C16500326C3D /* Foundation.framework */,
+				BD3D219E1843C16500326C3D /* CoreGraphics.framework */,
+				BD3D21A01843C16500326C3D /* UIKit.framework */,
+				BD3D21B51843C16500326C3D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD3D21A21843C16500326C3D /* Homyaki */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D21AB1843C16500326C3D /* GAAppDelegate.h */,
+				BD3D21AC1843C16500326C3D /* GAAppDelegate.m */,
+				BD3D21CB1843C1F300326C3D /* GAStartGameController.h */,
+				BD3D21CC1843C1F300326C3D /* GAStartGameController.m */,
+				BD3D21CD1843C1F300326C3D /* GAStartGameController.xib */,
+				BD3D21D81843C41D00326C3D /* GAGameController.h */,
+				BD3D21D91843C41D00326C3D /* GAGameController.m */,
+				BD3D21DA1843C41D00326C3D /* GAGameController.xib */,
+				BD3D21AE1843C16500326C3D /* Images.xcassets */,
+				BD3D21A31843C16500326C3D /* Supporting Files */,
+			);
+			path = Homyaki;
+			sourceTree = "<group>";
+		};
+		BD3D21A31843C16500326C3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D21DD1843D61A00326C3D /* hole.png */,
+				BD3D21D61843C33300326C3D /* big_hamster.png */,
+				BD3D21D01843C21800326C3D /* grass_bg@2x.png */,
+				BD3D21D11843C21800326C3D /* grass_bg.png */,
+				BD3D21D21843C21800326C3D /* hamster.png */,
+				BD3D21A41843C16500326C3D /* Homyaki-Info.plist */,
+				BD3D21A51843C16500326C3D /* InfoPlist.strings */,
+				BD3D21A81843C16500326C3D /* main.m */,
+				BD3D21AA1843C16500326C3D /* Homyaki-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD3D21BB1843C16500326C3D /* HomyakiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D21C11843C16500326C3D /* HomyakiTests.m */,
+				BD3D21BC1843C16500326C3D /* Supporting Files */,
+			);
+			path = HomyakiTests;
+			sourceTree = "<group>";
+		};
+		BD3D21BC1843C16500326C3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D21BD1843C16500326C3D /* HomyakiTests-Info.plist */,
+				BD3D21BE1843C16500326C3D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD3D21981843C16500326C3D /* Homyaki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3D21C51843C16600326C3D /* Build configuration list for PBXNativeTarget "Homyaki" */;
+			buildPhases = (
+				BD3D21951843C16500326C3D /* Sources */,
+				BD3D21961843C16500326C3D /* Frameworks */,
+				BD3D21971843C16500326C3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homyaki;
+			productName = Homyaki;
+			productReference = BD3D21991843C16500326C3D /* Homyaki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD3D21B31843C16500326C3D /* HomyakiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3D21C81843C16600326C3D /* Build configuration list for PBXNativeTarget "HomyakiTests" */;
+			buildPhases = (
+				BD3D21B01843C16500326C3D /* Sources */,
+				BD3D21B11843C16500326C3D /* Frameworks */,
+				BD3D21B21843C16500326C3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD3D21BA1843C16500326C3D /* PBXTargetDependency */,
+			);
+			name = HomyakiTests;
+			productName = HomyakiTests;
+			productReference = BD3D21B41843C16500326C3D /* HomyakiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD3D21911843C16500326C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alex Gra";
+				TargetAttributes = {
+					BD3D21B31843C16500326C3D = {
+						TestTargetID = BD3D21981843C16500326C3D;
+					};
+				};
+			};
+			buildConfigurationList = BD3D21941843C16500326C3D /* Build configuration list for PBXProject "Homyaki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD3D21901843C16500326C3D;
+			productRefGroup = BD3D219A1843C16500326C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3D21981843C16500326C3D /* Homyaki */,
+				BD3D21B31843C16500326C3D /* HomyakiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD3D21971843C16500326C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D21D31843C21800326C3D /* grass_bg@2x.png in Resources */,
+				BD3D21D41843C21800326C3D /* grass_bg.png in Resources */,
+				BD3D21DE1843D61A00326C3D /* hole.png in Resources */,
+				BD3D21D71843C33300326C3D /* big_hamster.png in Resources */,
+				BD3D21DC1843C41D00326C3D /* GAGameController.xib in Resources */,
+				BD3D21D51843C21800326C3D /* hamster.png in Resources */,
+				BD3D21A71843C16500326C3D /* InfoPlist.strings in Resources */,
+				BD3D21CF1843C1F300326C3D /* GAStartGameController.xib in Resources */,
+				BD3D21AF1843C16500326C3D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3D21B21843C16500326C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D21C01843C16500326C3D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD3D21951843C16500326C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D21CE1843C1F300326C3D /* GAStartGameController.m in Sources */,
+				BD3D21AD1843C16500326C3D /* GAAppDelegate.m in Sources */,
+				BD3D21A91843C16500326C3D /* main.m in Sources */,
+				BD3D21DB1843C41D00326C3D /* GAGameController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3D21B01843C16500326C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3D21C21843C16500326C3D /* HomyakiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD3D21BA1843C16500326C3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3D21981843C16500326C3D /* Homyaki */;
+			targetProxy = BD3D21B91843C16500326C3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD3D21A51843C16500326C3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3D21A61843C16500326C3D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BD3D21BE1843C16500326C3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3D21BF1843C16500326C3D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD3D21C31843C16500326C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD3D21C41843C16500326C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD3D21C61843C16600326C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homyaki/Homyaki-Prefix.pch";
+				INFOPLIST_FILE = "Homyaki/Homyaki-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BD3D21C71843C16600326C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homyaki/Homyaki-Prefix.pch";
+				INFOPLIST_FILE = "Homyaki/Homyaki-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BD3D21C91843C16600326C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homyaki.app/Homyaki";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homyaki/Homyaki-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomyakiTests/HomyakiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BD3D21CA1843C16600326C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Homyaki.app/Homyaki";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homyaki/Homyaki-Prefix.pch";
+				INFOPLIST_FILE = "HomyakiTests/HomyakiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD3D21941843C16500326C3D /* Build configuration list for PBXProject "Homyaki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3D21C31843C16500326C3D /* Debug */,
+				BD3D21C41843C16500326C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD3D21C51843C16600326C3D /* Build configuration list for PBXNativeTarget "Homyaki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3D21C61843C16600326C3D /* Debug */,
+				BD3D21C71843C16600326C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BD3D21C81843C16600326C3D /* Build configuration list for PBXNativeTarget "HomyakiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3D21C91843C16600326C3D /* Debug */,
+				BD3D21CA1843C16600326C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD3D21911843C16500326C3D /* Project object */;
+}
