@@ -32,8 +32,14 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
-    //задайте количество норок
+    if (![sender isKindOfClass:UIButton.class]) {
+        return;
+    }
+    
+    UIButton *button = sender;
+    NSString *buttonTitle = [button titleLabel].text;
+    
+    int holesCount = [buttonTitle intValue];
     
     if(holesCount <= 0)return;
     

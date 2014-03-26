@@ -7,6 +7,10 @@
 //
 
 #import "GAGameController.h"
+#import "UIHamsterButton.h"
+
+#define HOLE_WIDTH 45.0f
+#define HOLE_HEIGHT 50.0f
 
 @interface GAGameController ()
 {
@@ -15,6 +19,7 @@
     NSTimer* gameTimer;
     int timerCallCount;
 }
+@property (weak, nonatomic) IBOutlet UILabel *livesCountLabel;
 @property (nonatomic, assign) int livesCount;
 @property (nonatomic, weak) IBOutlet UIView* boardView;
 @end
@@ -37,6 +42,7 @@
     
     //делаем дополнительную инициализацию представления после загрузки из xib
     boardView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
+    [boardView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -58,21 +64,46 @@
 }
 
 #pragma mark - UI
-- (void)updateHolesPosition
-{
-    float rowHeight = 60;
-    float colWidth = 55;
-    //задайте правильные позиции кнопок чтобы не вылезали за границы boardView
+- (void)updateHolesPosition {
+    int columns = boardView.frame.size.width / (HOLE_WIDTH+10);
+    int rows = _holesCount / columns;
+    if (_holesCount % columns != 0) {
+        rows++;
+    }
+    
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            int index = i*columns + j;
+            
+            if (index >= _holesCount) {
+                break;
+            }
+            
+            UIButton *button = nil;
+            if (index < holeButtonsArray.count) {
+                button = [holeButtonsArray objectAtIndex:index];
+            } else {
+                button = [UIHamsterButton buttonWithType:UIButtonTypeCustom];
+                [button addTarget:self action:@selector(hamsterPressed:) forControlEvents:UIControlEventTouchUpInside];
+                [holeButtonsArray addObject:button];
+                
+                [boardView addSubview:button];
+            }
+            [button setFrame:CGRectMake(j*(HOLE_WIDTH+10), i*(HOLE_HEIGHT+10), HOLE_WIDTH, HOLE_HEIGHT)];
+        }
+    }
 }
 
 - (void)setLivesCount:(int)livesCount
 {
     _livesCount = livesCount;
+    [_livesCountLabel setText:[NSString stringWithFormat:@"Жизней: %d", livesCount]];
 }
 
-- (void)cleanUp
-{
-    //удаляем все кнопки с доски
+- (void)cleanUp {
+    for (UIHamsterButton *button in holeButtonsArray) {
+        [button showHamster:NO];
+    }
 }
 
 #pragma mark - Game logic
@@ -85,11 +116,8 @@
     [self cleanUp];
     self.livesCount = 3;
     timerCallCount = 10;
+    [self cleanUp];
     holeButtonsArray = [NSMutableArray new];
-    CGSize buttonSize = [UIImage imageNamed:@"hamster"].size;
-    for(int i = 0; i < _holesCount; i++){
-        //создаем кнопки
-    }
     [self updateHolesPosition];
     
     gameTimer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(gameTimerCall) userInfo:nil repeats:YES];
@@ -97,13 +125,29 @@
 
 - (void)gameTimerCall
 {
-    if(timerCallCount <= 0)
+    if(timerCallCount <= 0) {
         [self gameOver:YES];
+        return;
+    }
+    
     timerCallCount--;
     
-    //.........
+    BOOL allHamstersHidden = YES;
+    for(int i = 0; i < holeButtonsArray.count; i++){
+        UIHamsterButton *button = holeButtonsArray[i];
+        if (![button hamsterHidden]) {
+            [button showHamster:NO];
+            allHamstersHidden = NO;
+            break;
+        }
+    }
     
-    [self randomHamsterArrise];
+    if (!allHamstersHidden && ![self minusLive]) {
+        [self gameOver:NO];
+    } else {
+        [self randomHamsterArrise];
+    }
+    
 }
 
 - (BOOL)minusLive
@@ -115,20 +159,24 @@
 - (void)randomHamsterArrise
 {
     int randomNum = arc4random() % holeButtonsArray.count;
-    for(int i = 0; i < holeButtonsArray.count; i++){
-        //...........
-    }
+    
+    UIHamsterButton *button = [holeButtonsArray objectAtIndex:randomNum];
+    [button showHamster:YES];
 }
 
 - (void)hamsterPressed:(UIButton*)holeButt
 {
-    //...........
+    UIHamsterButton *button = (UIHamsterButton *)holeButt;
+    if (![button hamsterHidden]) {
+        [button showHamster:NO];
+    }
 }
 
 - (void)gameOver:(BOOL)isWin
 {
     [gameTimer invalidate];
     gameTimer = nil;
+    [self cleanUp];
     
     NSString* message = isWin? @"От хомяков не осталось и следа!" : @"Хомяки вас захватили!";
     NSString* okTitle = isWin? @"Да у них нет шансов" : @"Я ничтожество";

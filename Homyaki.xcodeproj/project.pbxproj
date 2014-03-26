@@ -28,6 +28,7 @@
 		BD3D21DB1843C41D00326C3D /* GAGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3D21D91843C41D00326C3D /* GAGameController.m */; };
 		BD3D21DC1843C41D00326C3D /* GAGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21DA1843C41D00326C3D /* GAGameController.xib */; };
 		BD3D21DE1843D61A00326C3D /* hole.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3D21DD1843D61A00326C3D /* hole.png */; };
+		E34C17F118E2A75F00F341B8 /* UIHamsterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E34C17F018E2A75F00F341B8 /* UIHamsterButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		BD3D21D91843C41D00326C3D /* GAGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAGameController.m; sourceTree = "<group>"; };
 		BD3D21DA1843C41D00326C3D /* GAGameController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GAGameController.xib; sourceTree = "<group>"; };
 		BD3D21DD1843D61A00326C3D /* hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hole.png; sourceTree = "<group>"; };
+		E34C17EF18E2A75F00F341B8 /* UIHamsterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHamsterButton.h; sourceTree = "<group>"; };
+		E34C17F018E2A75F00F341B8 /* UIHamsterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHamsterButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				BD3D21DA1843C41D00326C3D /* GAGameController.xib */,
 				BD3D21AE1843C16500326C3D /* Images.xcassets */,
 				BD3D21A31843C16500326C3D /* Supporting Files */,
+				E34C17EF18E2A75F00F341B8 /* UIHamsterButton.h */,
+				E34C17F018E2A75F00F341B8 /* UIHamsterButton.m */,
 			);
 			path = Homyaki;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				BD3D21AD1843C16500326C3D /* GAAppDelegate.m in Sources */,
 				BD3D21A91843C16500326C3D /* main.m in Sources */,
 				BD3D21DB1843C41D00326C3D /* GAGameController.m in Sources */,
+				E34C17F118E2A75F00F341B8 /* UIHamsterButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +492,7 @@
 				BD3D21C71843C16600326C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD3D21C81843C16600326C3D /* Build configuration list for PBXNativeTarget "HomyakiTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +501,7 @@
 				BD3D21CA1843C16600326C3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
