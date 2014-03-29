@@ -62,7 +62,9 @@
 {
     float rowHeight = 60;
     float colWidth = 55;
+    int holesInRow = (int) self.view.frame.size.width / colWidth;
     //задайте правильные позиции кнопок чтобы не вылезали за границы boardView
+    
 }
 
 - (void)setLivesCount:(int)livesCount
@@ -88,11 +90,15 @@
     holeButtonsArray = [NSMutableArray new];
     CGSize buttonSize = [UIImage imageNamed:@"hamster"].size;
     for(int i = 0; i < _holesCount; i++){
-        //создаем кнопки
+        UIButton *holeButt = [UIButton new];
+        [holeButt setOpaque:NO];
+        [holeButt sizeThatFits:buttonSize];
+        [holeButt setImage:[UIImage imageNamed:@"hole"] forState:UIControlStateNormal];
+        [self.view de]
     }
     [self updateHolesPosition];
     
-    gameTimer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(gameTimerCall) userInfo:nil repeats:YES];
+    //gameTimer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(gameTimerCall) userInfo:nil repeats:YES];
 }
 
 - (void)gameTimerCall
