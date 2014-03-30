@@ -22,7 +22,8 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ios-galaxy-bg"]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
@@ -33,7 +34,15 @@
 - (IBAction)buttonPressed:(id)sender
 {
     int holesCount = -1;
-    //задайте количество норок
+    if ([[button1 currentTitle] isEqualToString:[sender currentTitle]]) {
+        holesCount = 10;
+    }
+    if ([[button2 currentTitle] isEqualToString:[sender currentTitle]]) {
+        holesCount = 20;
+    }
+    if ([[button3 currentTitle] isEqualToString:[sender currentTitle]]) {
+        holesCount = 30;
+    }
     
     if(holesCount <= 0)return;
     

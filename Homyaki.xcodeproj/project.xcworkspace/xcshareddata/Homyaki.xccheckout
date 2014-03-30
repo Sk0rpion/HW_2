@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>252C1604-ED37-43C0-9A72-17896B89E7B3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homyaki</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72F1591A-33FC-419A-976C-F6483E20104B</key>
+		<string>https://github.com/timurnurutdinov/HW_2</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homyaki.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72F1591A-33FC-419A-976C-F6483E20104B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/timurnurutdinov/HW_2</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>72F1591A-33FC-419A-976C-F6483E20104B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72F1591A-33FC-419A-976C-F6483E20104B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HW_2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
