@@ -144,6 +144,7 @@
         if ([self minusLive] == NO)
         {
             [self gameOver:NO];
+            return;
         }
         else
         {
@@ -168,7 +169,10 @@
 {
     [gameTimer invalidate];
     gameTimer = nil;
-    
+    if (currentHamster != -1)
+    {
+        [holeButtonsArray[currentHamster] setImage:_holeImg forState:UIControlStateNormal];
+    }
     NSString* message = isWin? @"От хомяков не осталось и следа!" : @"Хомяки вас захватили!";
     NSString* okTitle = isWin? @"Да у них нет шансов" : @"Я ничтожество";
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:nil
