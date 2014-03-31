@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GAGameController">
             <connections>
                 <outlet property="boardView" destination="LZq-c3-hCx" id="6KV-AJ-njw"/>
+                <outlet property="livesLabel" destination="dlN-5l-SJJ" id="X1K-bP-kvM"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
