@@ -32,7 +32,9 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
+    UIButton *currentButton = [[UIButton alloc]init];
+    currentButton = sender;
+    int holesCount = [currentButton.currentTitle intValue];
     //задайте количество норок
     
     if(holesCount <= 0)return;
@@ -41,4 +43,6 @@
     [self presentModalViewController:gameController animated:YES];
 }
 
+- (IBAction)numberOfHole:(id)sender {
+}
 @end
