@@ -45,7 +45,7 @@
                     holesCount = 30;
                 }
         
-    
+
     if(holesCount <= 0)return;
     
     GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
