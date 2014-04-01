@@ -27,7 +27,6 @@
     self = [super init];
     if (self) {
         _holesCount = holesCount;
-        NSLog(@"holes count: %i",_holesCount);
     }
     return self;
 }
