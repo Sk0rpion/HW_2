@@ -10,9 +10,10 @@
 #import "GAGameController.h"
 
 @interface GAStartGameController ()
-@property (nonatomic, weak) IBOutlet UIButton* button1;
-@property (nonatomic, weak) IBOutlet UIButton* button2;
-@property (nonatomic, weak) IBOutlet UIButton* button3;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+
 @end
 
 @implementation GAStartGameController
@@ -21,7 +22,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
 }
 
@@ -32,13 +32,38 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
-    //задайте количество норок
-    
+        int holesCount = -1;
+        //задайте количество норок
+        
+        if([(UIButton*)sender isEqual:button1]){
+            holesCount = 10;
+        }else
+            if([(UIButton*)sender isEqual:button2]){
+                holesCount = 20;
+            }else
+                if ([(UIButton*)sender isEqual:button1]){
+                    holesCount = 30;
+                }
+        
+
     if(holesCount <= 0)return;
     
     GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
     [self presentModalViewController:gameController animated:YES];
 }
 
+- (IBAction)pressBut1:(id)sender
+{
+    [self buttonPressed:sender];
+}
+
+- (IBAction)pressBut2:(id)sender
+{
+    [self buttonPressed:sender];
+}
+
+- (IBAction)pressBut3:(id)sender
+{
+    [self buttonPressed:sender];
+}
 @end
