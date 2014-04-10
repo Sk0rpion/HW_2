@@ -21,7 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
 }
 
@@ -32,11 +31,12 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
-    //задайте количество норок
-    
-    if(holesCount <= 0)return;
-    
+    UIButton *button = sender;
+    NSString *title = [button titleLabel].text;
+    int holesCount = [title intValue];
+    if(holesCount <= 0) {
+        return;
+    }
     GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
     [self presentModalViewController:gameController animated:YES];
 }
