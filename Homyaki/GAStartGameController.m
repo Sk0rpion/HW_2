@@ -13,10 +13,12 @@
 @property (nonatomic, weak) IBOutlet UIButton* button1;
 @property (nonatomic, weak) IBOutlet UIButton* button2;
 @property (nonatomic, weak) IBOutlet UIButton* button3;
+@property (nonatomic, weak) IBOutlet UITextField* time;
+
 @end
 
 @implementation GAStartGameController
-@synthesize button1, button2, button3;
+@synthesize button1, button2, button3,time;
 
 - (void)viewDidLoad
 {
@@ -30,14 +32,14 @@
     return toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown;
 }
 
-- (IBAction)buttonPressed:(id)sender
+- (IBAction)buttonPressed:(UIButton *)sender
 {
     int holesCount = -1;
     //задайте количество норок
-    
+    holesCount=(int)[sender.titleLabel.text floatValue];
     if(holesCount <= 0)return;
-    
-    GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
+    if([time.text floatValue]<=0)return;
+    GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount andTime:(int)[time.text floatValue]];
     [self presentModalViewController:gameController animated:YES];
 }
 
