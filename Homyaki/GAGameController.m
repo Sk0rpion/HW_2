@@ -172,12 +172,14 @@
 
 - (void)hamsterPressed:(UIButton*)holeButt
 {
-    if(holeButt.imageView.image==[UIImage imageNamed:@"hamster.png"]){
-        isHamster=YES;
-        [holeButtonsArray[randomNum] setImage:[UIImage imageNamed:@"hole.png"] forState:UIControlStateNormal];
-    }else{
-        isHamster=NO;
-        [holeButtonsArray[randomNum] setImage:[UIImage imageNamed:@"hole.png"] forState:UIControlStateNormal];
+    if(randomNum>=0){
+        if(holeButt==holeButtonsArray[randomNum]){
+            isHamster=YES;
+            [holeButtonsArray[randomNum] setImage:[UIImage imageNamed:@"hole.png"] forState:UIControlStateNormal];
+        }else{
+            isHamster=NO;
+            [holeButtonsArray[randomNum] setImage:[UIImage imageNamed:@"hole.png"] forState:UIControlStateNormal];
+        }
     }
     //...........
 }
