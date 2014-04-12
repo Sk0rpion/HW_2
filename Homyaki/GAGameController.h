@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GAGameController : UIViewController
-- (id)initWithHolesCount:(int)holesCount;
+- (id)initWithHolesCount:(int)holesCount andTime:(int)time;
 @end
