@@ -10,4 +10,8 @@
 
 @interface GAStartGameController : UIViewController
 
+- (void)viewDidLoad;
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
+- (IBAction)buttonPressed:(id)sender;
+
 @end
