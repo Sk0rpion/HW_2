@@ -23,6 +23,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grass_bg"]];
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
@@ -32,11 +33,13 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
-    //задайте количество норок
+    UIButton *button = sender;
+    NSString *title = [button titleLabel].text;
+    int holesCount = [title intValue];
     
-    if(holesCount <= 0)return;
-    
+    if(holesCount <= 0)
+        return;
+    NSLog(@"%d",holesCount);
     GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
     [self presentModalViewController:gameController animated:YES];
 }
