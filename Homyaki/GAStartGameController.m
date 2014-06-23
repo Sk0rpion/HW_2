@@ -32,9 +32,11 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    int holesCount = -1;
-    //задайте количество норок
+    UIButton *button = sender;
+    NSString *string = [button titleLabel].text;
     
+    //задайте количество норок
+    int holesCount = [string intValue];
     if(holesCount <= 0)return;
     
     GAGameController* gameController = [[GAGameController alloc] initWithHolesCount:holesCount];
